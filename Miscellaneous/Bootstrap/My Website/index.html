@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Bootstrap | Practise</title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	
+	<div class="container" id="main">
+
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"/></a>
+
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+
+					<ul class="nav navbar-nav">
+
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">Web Development</a></li>
+								<li><a href="#">SEO</a>
+
+								<li class="divider"></li>
+
+								<li class="dropdown-header">More Services</li>
+								<li><a href="#">Content Creation</a></li>
+								<li><a href="#">Social Media Marketing</a></li>
+
+							</ul><!--dropdown menu-->
+						</li>
+
+					</ul>
+
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+
+					<ul class="nav navbar-nav pull-right">
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a></li>
+
+								<li class="divider"></li>
+
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+
+							</ul>
+						</li>
+
+					</ul><!--nav pull-right-->
+
+				</div><!--nav-collapse-->
+
+			</div><!--container-->
+		</div><!--navbar-->
+
+
+		<div class="carousel slide" id="myCarousel">
+
+			<!--Indicators-->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+
+			<!--Wrappe for slides-->
+			<div class="carousel-inner">
+
+				<div class="item active" id="slide1">
+					<!-- if you want to add html images add here -->
+					<div class="carousel-caption">
+						<h4>Bootstrap 3</h4>
+						<p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3</p>
+					</div><!--carousel-caption-->
+				</div><!--item-->
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Learn to code a website in 4 hours</h4>
+						<p>PSD to HTML5 &amp; CSS# is a popular udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+					</div><!--carousel-caption-->
+				</div><!--item-->
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Web Hosting 101</h4>
+						<p>Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+					</div><!--carousel-caption-->
+				</div><!--item-->
+
+			</div><!--carousel-inner-->
+
+			<!--Controls-->
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+		</div><!--myCarousel-->
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success!</h4>
+					<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close the bad boy.</p>
+				</div><!--alert-->
+
+				<!--Visible only on small devices-->
+				<div class="well well-small visible-sm">
+				<!--well-small= smaller well with lesser padding visible-sm = visible only in smaller devices-->
+					<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"><span> Give us a call</a>
+				</div><!--well-small-->
+
+				<div class="well">
+					<div class="page-header">
+						<h1>A Fancy Header <small>A subheader for extra awesome<!--adding small includes a subheader to any heading--></small></h1>
+					</div><!--page-header-->
+					
+					<p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice. Know what I'm sayin?</p>
+
+					<a href="#" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
+					<a href="#" class="btn btn-large btn-link">or a secondary link</a>
+				</div><!--well-->
+
+			</div><!--col-12-->
+		</div><!--bigCallout-->
+
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h2>More Features</h2>
+				<p class="lead">Cookie jelly cake marshmallow sweet gummi bears halvah. Powder jelly-o dragee marzipan chocolate sesame snaps. Tiramisu fruitcake lemon drops danish. Tart cookie gummi bears. Liquorice chocolate wafer sugar plum wafer. </p>
+			</div><!--col-12-->
+		</div><!--featuresHeading-->
+
+		<div class="row" id="features">
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Markup with HTML</h3>
+					</div><!--panel-heading-->
+
+					<img src="images/badges_html5.jpg" alt="HTML" class="img-circle">
+
+					<p>Icing candy canes apple pie gummi bears dragee sweet roll gummies chocolate cake carrot cake. Carrot cake bonbon muffin. Pudding chocolate tiramisu croissant croissant cheesecake.</p>
+
+					<a href="www.google.com" target="_blank" class="btn btn-warning btn-block">Learn to code HTML</a>
+					
+				</div><!--panel-->
+			</div><!--feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Style with CSS</h3>
+					</div><!--panel-heading-->
+
+					<img src="images/badges_css3.jpg" alt="CSS3" class="img-circle">
+
+					<p>Icing candy canes apple pie gummi bears dragee sweet roll gummies chocolate cake carrot cake. Carrot cake bonbon muffin. Pudding chocolate tiramisu croissant croissant cheesecake.</p>
+
+					<a href="www.google.com" target="_blank" class="btn btn-danger btn-block">Style it up with CSS3</a>
+					
+				</div><!--panel-->
+			</div><!--feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Framework by Bootstrap</h3>
+					</div><!--panel-heading-->
+
+					<img src="images/badges_bootstrap.jpg" alt="Bootstrap" class="img-circle">
+
+					<p>Icing candy canes apple pie gummi bears dragee sweet roll gummies chocolate cake carrot cake. Carrot cake bonbon muffin. Pudding chocolate tiramisu croissant croissant cheesecake.</p>
+
+					<a href="www.google.com" target="_blank" class="btn btn-info btn-block">More Bootstrap</a>
+					
+				</div><!--panel-->
+			</div><!--feature-->
+
+		</div><!--features-->
+
+		<hr>
+
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3>Neat Tabbable Content</h3>
+
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section1</a></li>
+						<li><a href="#tab2" data-toggle="tab">Section2</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab11">
+							<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>More like our favourite surf spot</small></h4>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124379.952042979!2d80.283854!3d13.043723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52689bb60132bb%3A0x549cf8edf62b60a!2sMarina+Beach!5e0!3m2!1sen!2sus!4v1444856669860" width="100%" height="200" frameborder="0" style="border:0" ></iframe>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						</div><!--tab-pane1-->
+
+						<div class="tab-pane" id="tab2">
+							<h4>A Left Floated Picture</h4>
+
+							<img src="http://placehold.it/140" class="thumbnail pull-left" >
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<hr>
+
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window</a>
+
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">A Modal Window</h4>
+										</div><!--modal-header-->
+
+										<div class="modal-body">
+
+											<h4>Text in a modal</h4>
+
+											<p>Cotton candy topping croissant croissant pudding chocolate bar ice cream gummies..</p>
+
+											<h4>Popovers in a modal</h4>
+											<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would">Don't click this button</a>
+
+											<h4>Tooltips in a modal</h4>
+											<a href="#" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip and so should, <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>
+
+											<hr>
+
+											<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName"
+														placeholder="Name" type="text"/>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail"
+														placeholder="Email" type="text"/>
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage"
+														placeholder="Message" rows="3"></textarea>
+
+														<button class="btn btn-success pull-right" type="submit">Send!</button>
+													</div>
+												</div>
+											</form>
+										</div><!--modal-body-->
+
+										<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary">Save Changes</button>
+										</div><!--modal-footer-->
+
+									</div><!--modal-content-->
+								</div><!--modal-dialog-->
+							</div><!--myModal-->
+
+						</div><!--tab-pane-->
+					</div><!--tab-content-->
+
+				</div><!--tabbable-->
+
+			</div><!--col-sm-6-->
+
+			<div class="col-sm-6">
+				<h3>Some Text Info</h3>
+				<p>Lemon drops cotton candy topping sesame snaps cheesecake gingerbread powder. Cake powder croissant pudding carrot cake cake. Biscuit bonbon topping cookie jelly-o sesame snaps. Gingerbread croissant cake jujubes oat cake biscuit sweet. Chupa chups pie carrot cake. Tart gingerbread muffin jelly-o biscuit sweet roll gingerbread jelly.</p>
+
+				<h4>A List Group</h4>
+
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Kale</h4>
+						<p class="list-group-item-text">Dragee pudding sweet roll chocolate bar tart. Dragee topping dessert donut cupcake sesame snaps gummi bears ice cream macaroon. Tootsie roll danish powder dessert.</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Carrot</h4>
+						<p class="list-group-item-text">Dragee pudding sweet roll chocolate bar tart. Dragee topping dessert donut cupcake sesame snaps gummi bears ice cream macaroon. Tootsie roll danish powder dessert.</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Steel-cut oats</h4>
+						<p class="list-group-item-text">Dragee pudding sweet roll chocolate bar tart. Dragee topping dessert donut cupcake sesame snaps gummi bears ice cream macaroon. Tootsie roll danish powder dessert.</p>
+					</a>
+				</div><!--list-group-->
+
+				<h5>A small heading</h5>
+				<p>Donut sugar plum pastry jelly-o halvah. Sesame snaps chocolate cake carrot cake biscuit drae sugar plum sugar plum. Lollipop macaroon pudding dessert bear claw cupcake lemon drops souffl gummi bears. Tootsie roll lollipop halvah gummi bears jelly-o candy canes drage jelly-o. Drage candy canes halvah biscuit candy tart lollipop cake danish. Topping toffee donut carrot cake muffin halvah sweet gummies. Ice cream halvah brownie. Gummies cake lollipop. Oat cake cake donut toffee. Sweet chocolate bar sweet roll tootsie roll candy ice cream.</p>
+			</div><!--sol-sm-6-->
+
+		</div><!--moreInfo-->
+
+		<hr>
+
+		<div class="row" id="mainCourses">
+			<div class="col-12">
+				<h3>Learn more about Web Design</h3>
+
+				<div class="thumbnails row">
+
+					<div class="col-6">
+						<div class="thumbnail">
+							<img src="images/item_webhosting101.jpg" alt="Web Hosting 101">
+
+							<div class="label label-success price"><span class="glyphicon glyphicon-tag"> <sup>$39</sup></span></div>
+
+							<div class="caption">
+								<h3>Web Hosting 101</h3>
+								<p>Pastry candy canes gingerbread pastry carrot cake pie liquorice cake. Chocolate cake marshmallow donut dessert danish biscuit souffle muffin. Tart gingerbread gummies dessert cake pudding. Gummi bears jelly beans croissant brownie.</p>
+
+								<p><a href="" class="btn btn-primary btn-small" target="_blank">Take course</a><a href="" class="btn btn-small btn-link">Learn more</a></p>
+							</div><!--caption-->
+						</div><!--thumbnail-->
+					</div><!--col-6-->
+
+					<div class="col-6">
+						<div class="thumbnail">
+							<img src="images/item_psd2html5.jpg" alt="PSD to HTML5 &amp; CSS3">
+
+							<div class="label label-info price"><span class="glyphicon glyphicon-tag"> Free</span></div>
+
+							<div class="caption">
+								<h3>Web Hosting 101</h3>
+								<p>Pastry candy canes gingerbread pastry carrot cake pie liquorice cake. Chocolate cake marshmallow donut dessert danish biscuit souffle muffin. Tart gingerbread gummies dessert cake pudding. Gummi bears jelly beans croissant brownie.</p>
+
+								<p><a href="" class="btn btn-primary btn-small" target="_blank">Take course</a><a href="" class="btn btn-small btn-link">Learn more</a></p>
+							</div><!--caption-->
+						</div><!--thumbnail-->
+					</div><!--col-6-->
+
+				</div><!--thumbnails-->
+			</div><!--col-12-->
+		</div><!--mainCourses-->
+ 
+	</div><!--container-->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-2">
+					<h6>Copyright &copy; 2013 Skeleton Soul</h6>
+				</div><!--col-sm-2-->
+
+				<div class="col-sm-4">
+					<h6>About Us</h6>
+					<p>Croissant wafer croissant caramels gummies drage. Brownie icing powder ice cream sweet cookie chocolate cake apple pie cupcake. Jujubes chocolate fruitcake macaroon pie topping oat cake. Candy canes candy candy liquorice.</p>
+				</div><!--col-sm-4-->
+
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="">Home</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Link</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div><!--col-sm-2-->
+
+				<div class="col-sm-2">
+					<h6>Follow Us</h6>
+					<ul class="unstyled">
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Google Plus</a></li>
+					</ul>
+				</div><!--col-sm-2-->
+
+				<div class="col-sm-2">
+					<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Skeleton Soul</h6>
+				</div><!--col-sm-2-->
+			
+			</div><!--row-->
+		</div><!--container-->
+	</footer>
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+	</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+

@@ -1,0 +1,529 @@
+/* ------------------ */
+	/* =HOME */
+/* ****************** */
+
+/* ------------------------ */
+	/* =spacing bet pgs */
+/* ************************ */
+
+.WORKS{
+	margin-top: 235px;
+}
+
+.TEAM{
+	margin-top: 150px;
+}
+
+/* ------------------ */
+	/* =body */
+/* ****************** */
+
+.home{
+	margin: 0px;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size:cover;
+}
+
+.wrap{
+	
+	color: white;
+	font-family: 'Open Sans',sans-serif;
+	margin: auto;
+}
+
+/* ------------------ */
+	/* =general */
+/* ****************** */
+body{
+	margin:0px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/* ------------------ */
+	/* =header */
+/* ****************** */
+
+header h1{
+	font-family: 'Pacifico',cursive;
+	font-size: 28px;
+	float: left;
+	margin-top: 27px;
+	line-height: 28px;
+	padding-right: 7px;
+	margin-right: 0px;
+	padding-left: 15%;
+}
+
+header h3{
+	font-size: 13px;
+	float: left;
+	margin-top: 35px;
+	color: #787e7f;
+	font-weight: 100;
+}
+
+header{
+	background: rgba(50, 176, 238, 0.05);
+	
+}
+
+header h3:before{
+	content: '|';
+	color: #32b0ee;
+	padding: 20px;
+	font-weight: 100;
+}
+
+/* ------------------ */
+	/* =nav */
+/* ****************** */
+
+nav{
+	float: right;
+	padding-right: 15%;
+}
+
+nav ul{
+	margin-top: 30px;
+}
+
+.selected{
+	border-top: 2px solid #32b0ee;
+	color: white;
+}
+
+nav li{
+	display: inline;
+	font-size: 13px;
+	line-height: 13px;
+	padding-right: 27px
+}
+
+nav li:last-child{
+	padding-right: 0px;
+}
+
+nav a{
+	padding-top: 30px;
+	color: #aeb6b7;
+	
+}
+
+nav a:hover{
+	color: white;
+}
+
+/* ------------------ */
+	/* =content */
+/* ****************** */
+
+.content{
+	clear: both;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.content h1{
+	font-size: 62px;
+
+}
+
+.content h1, h2, h3{
+	font-weight: 300;
+	margin: 0px
+}
+
+.content h2{
+	font-size: 47px;
+	letter-spacing: 2px
+}
+
+.content h3{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.bold{
+	font-weight: 800;
+}
+
+.color{
+	color: #0fda93;
+}
+
+/* ------------------ */
+	/* =footer */
+/* ****************** */
+
+footer{
+	margin: 100px auto 0px;
+	width: 100px;
+}
+
+footer img{
+	width: 20px;
+	height:20px;
+}
+
+footer a{
+	opacity: 0.2;
+}
+
+footer a:hover{
+	opacity:1;
+}
+
+/* ------------------ */
+	/* =FEATURES */
+/* ****************** */
+
+.features{
+	color: black;
+	font-family: 'Open Sans',sans-serif;
+	margin: auto;
+}
+
+/* ------------------ */
+	/* =header */
+/* ****************** */
+
+.features header {
+	
+	background: #0eb493;
+}
+
+.features header h1{
+	padding-left: 5px;
+}
+
+.features nav{
+	padding-right: 25px;
+}
+
+.features header h3{
+	color: black;
+}
+
+.features a{
+	color:black;
+}
+
+.side a{
+	color:black;
+}
+
+.side a:hover{
+	color: white;
+}
+
+#selected{
+	border-top: 2px solid #166757;
+	color: white;
+}
+
+/* ------------------ */
+	/* =h1 heading */		
+/* ****************** */
+
+
+
+.heading{
+	text-transform:  uppercase;
+	font-weight: 800;
+	width:300px;
+	color: #0eb493;
+	text-align: center;
+	margin:50px auto;
+	padding: 30px 30px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #dce1e5;
+}
+
+
+
+/* ------------------ */
+	/* =sectionFeatures */
+/* ****************** */
+
+section{
+	position:relative;
+	box-sizing:border-box;
+	padding-left:70px;
+}
+
+section h3{
+	color: #062033;
+	font-weight: 800;
+}
+
+section p{
+	color: #4d606e;
+}	
+
+section:first-child:before{
+	content:url(../img/features1.jpg);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+section:nth-child(2):before{
+	content:url(../img/features2.jpg);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+section:last-child:before{
+	content:url(../img/features3.jpg);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -5px;
+	left:0;
+}
+
+/* ------------------ */
+	/* =Worksubheader */
+/* ****************** */
+
+.head p{
+	text-align: center;
+	width:960px;
+	margin:-20px auto ;
+}
+
+/* ------------------ */
+	/* =subheader */
+/* ****************** */
+
+.subHeader{
+	width:500px;
+	margin: auto;
+	padding : 25px 0px;
+	background-color: white;
+}
+
+.subHeader a{
+	color: black;
+	font-weight: 800;
+	padding: 7px 15px;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 13px
+}
+
+.subHeader li{
+	display: inline;
+}
+
+.subHeader a:hover{
+	color: white;
+	background-color: #0eb493;
+	border-radius: 3px;
+}
+
+/* ------------------ */
+	/* =imageBox */
+/* ****************** */	
+
+/* --------------------------------------- */
+	/* =addimages with hover effect */
+/* *************************************** */
+
+.image{
+	width: 337px;
+	height: 254px;
+	overflow: hidden;
+	display: inline-block;
+	margin-left: -4px;
+	margin-bottom: -5px;
+}
+
+#image1{background: url(../img/King-Kong.jpg);}
+#image2{background: url(../img/pelican.jpg);}
+#image3{background: url(../img/boating.jpg);}
+#image4{background: url(../img/city.jpg);}
+#image5{background: url(../img/army.jpg);}
+#image6{background: url(../img/three.jpg);}
+#image7{background: url(../img/funky.jpg);}
+#image8{background: url(../img/store.jpg);}
+
+/* ------------------------ */
+	/* =the background */
+/* ************************ */
+
+.bg{
+	width: 337px;
+	height: 254px;
+	opacity: 0;
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 14px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.para{
+	font-size: 18px;
+	padding-top: 90px;
+	margin-bottom: 0px;
+}
+
+/* -------------------------- */
+	/* =the hover effect */
+/* ************************** */
+
+.bg:hover{
+	opacity: 0.9;
+}
+
+#bg1:hover{background: #21b390;}
+#bg2:hover{background: #4d6277;}
+#bg3:hover{background: #21b390;}
+#bg4:hover{background: #4d6277;}
+#bg5:hover{background: #4d6277;}
+#bg6:hover{background: #d4ab75;}
+#bg7:hover{background: #4d6277;}
+#bg8:hover{background: #d4ab75;}
+
+/* ------------------ */
+	/* =team */
+/* ****************** */
+
+/* ------------------ */
+	/* =headingteam */
+/* ****************** */	
+
+.headingteam{
+	width:500px;
+	padding-top: 0px;
+	margin-top: 30px;
+}
+
+/* ------------------ */
+	/* =team images */
+/* ****************** */
+
+.teamImage{
+	width: 1200px;
+	margin: 20px auto;
+}
+
+.team{
+	width: 271px;
+	height: 367px;
+	display: inline-block;
+	padding: 0 10px;
+	margin-top: 25px;
+	font-family: 'Open Sans',sans-serif;
+	text-align:center;
+	color: white;
+}
+
+.name{
+	font-weight: 800;
+	font-size: 15px;
+	color: #062033;
+	margin-bottom: 0px;
+}
+
+.occ{
+	font-weight: 400;
+	font-size: 12px;
+	color: #86939c;
+	margin-top: 5px;
+}
+02:38 24-05-2015
+#team1{background: url(../img/john.jpg);}
+#team2{background: url(../img/chystine.jpg);}
+#team3{background: url(../img/martin.jpg);}
+#team4{background: url(../img/steve.jpg);}
+
+.teambg{
+	width: 271px;
+	height: 301px;
+	text-align: center;
+	opacity: 0;
+	background: #21b390;
+	margin-top: 25px 10px;
+}
+
+.teambg:hover{
+	opacity: 0.9;
+}
+
+.team:hover .name{
+	color: #21b390;
+}
+
+.teamImage img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+.teambg p:first-child{
+	font-weight: 800;
+	padding: 20px 30px 0px;
+}
+
+.teambg p:last-child{
+	font-weight: 100;
+	padding: 0px 30px;
+}
+
+.teambg img{
+	margin-top: 60px;
+	background: #0d7c67;
+	padding: 3px ;
+}
+
+.teambg img:hover{
+	background: black;
+}
+
+/* ------------------ */
+	/* =funfacts */
+/* ****************** */
+
+.factbg{
+	background: url(../img/factbg.jpg) no-repeat center center fixed;
+	width: 100%
+}
+
+.fact{
+	color: white;
+	font-family: 'Open Sans',sans-serif;
+	margin: auto;
+	font-variant: small-caps;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.fact h1{
+	font-weight: 100;
+	font-size: 36px;
+}
+
+.factline{
+	display: inline-block;
+}
+
+#fact1 h1{margin-top: 200px; margin-left: 270px; }
+#fact2 h1{margin-left: 165px;}
+#fact3 h1{margin-left: 160px;}
+#fact4 h1{margin-left: 170px;}
+
+#fact1 p{margin-left: 250px;}
+#fact2 p{margin-left: 150px;}
+#fact3 p{margin-left: 130px;}
+#fact4 p{margin-left: 150px;}

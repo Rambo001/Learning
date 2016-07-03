@@ -1,0 +1,338 @@
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;  
+}
+
+
+/*---------------------------*/
+         /*HOME*/
+/*---------------------------*/
+
+
+header{
+	height: 50px;
+	background-color: #f39c12;
+	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.list{
+	float: right;
+	margin: 0
+}
+
+.logo{
+	font-family: 'Homemade Apple', cursive;
+	float: left;
+	margin: 10px 20px;
+	font-size: 20px;
+}
+
+#bg{
+	width: 1349px;
+	height: 625px;
+	margin-top: 50px;
+	padding: 0;
+	position: relative;
+	z-index: 0;
+}
+
+.start{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+#start{
+	float: left;
+	padding-left: 40%;
+	padding-right: 0;
+	font-size: 40px;
+	width: 200px;
+	margin-top: 0;
+	opacity: 0.7;
+	border-right: 2px solid black;
+	
+}
+
+#start1{
+	float: right;
+	width: 250px;
+	padding-right: 25%;
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.logo a{
+	color: black;
+	text-decoration: none;
+}
+
+.nav{
+	margin: 10px;
+}
+
+.nav li{
+	list-style-type: none;
+	color: white;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+#more{
+	padding-left: 15px;
+}
+
+.nav a{
+	margin-left: 15px;
+	padding-bottom: 16px;
+}
+
+.nav a:hover{
+	border-bottom: 2px solid black;
+	color: black;
+}
+
+
+
+.nav a{
+	color: white;
+}
+
+footer{
+	margin: -40px 47%;
+	width: 100px;
+}
+
+footer img{
+	width: 20px;
+	height: 20px;	
+}
+
+footer a{
+	opacity: 0.2;
+}
+
+footer a:hover{
+	opacity:0.9;
+}
+
+/*---------------------------*/
+         /*FOOD*/
+/*---------------------------*/
+
+#food h1, #diet h1, #health h1, #about h1{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: #e67e22;
+	font-size: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dce1e5;
+}
+
+#food h1, #diet h1, #health h1{
+	margin: 150px 400px auto;
+}
+
+#food h1{
+	padding-top: 150px;
+}
+
+#tagline{
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 18px;
+	text-align: center;
+}
+
+.primary, #recipe{
+	width: 200px;
+	height: 200px;
+}
+
+#food a{
+	text-decoration: none;
+
+}
+
+.secondary{
+	height: 200px;
+	width: 200px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.hide{
+	opacity: 0;
+	height: 200px;
+	width: 200px;
+	margin-top: -21px;
+	color:white;
+	font-size: 17px;
+}
+
+
+.hide a{
+	color: black;
+}
+
+.hide:hover{
+	background: #e67e22;
+	opacity: 0.9;
+}
+
+#food1{
+	background-image: url(img/image1.jpg);
+	background-size: 200px 200px;
+	margin-left: 275px;
+}
+#food2{
+	background-image: url(img/image2.jpg);
+	background-size: 200px 200px;
+}
+#food3{
+	background-image: url(img/image3.jpg);
+	background-size: 200px 200px;
+}
+#food4{
+	background-image: url(img/image4.jpg);
+	background-size: 200px 200px;
+}
+
+/*---------------------------*/
+         /*DIET*/
+/*---------------------------*/
+#diet{
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.secdiet{
+	display: inline-block;
+	width: 200px;
+}
+
+#dietwhole{
+	padding-left: 275px;
+	padding-top: 50px;
+}
+
+#diet h1{
+	padding-top: 70px;
+}
+
+.trans img{
+	width: 200px;
+	height:200px;
+}
+
+#txtdiet{
+	visibility: hidden;
+}
+
+#diet a, .nxt{
+	width: 20px;
+	height: 15px;
+}
+
+#diet a{
+	text-decoration: none;
+	color: #f39c12;
+}
+
+#txtp{
+	margin: 0;
+	height: 20px;
+	font-size: 20px;
+}
+
+#txtp img{
+	margin-bottom: 0px;
+}
+
+.secdiet:hover .trans img{	
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.secdiet:hover #txtdiet{
+	visibility: visible;
+}
+
+.secdiet:hover #txtp{
+	-webkit-transform: translate(10px);
+	-moz-transform: translate(10px);
+	-ms-transform: translate(10px);
+	-o-transform: translate(10px);
+	transform: translate(10px);
+
+	-webkit-transition: all 0.5s ease-in-out 0.2s;
+	-moz-transition: all 0.5s ease-in-out 0.2s;
+	-ms-transition: all 0.5s ease-in-out 0.2s;
+	-o-transition: all 0.5s ease-in-out 0.2s;
+	transition: all 0.5s ease-in-out 0.2s;
+}
+
+
+/*---------------------------*/
+         /*HEALTH*/
+/*---------------------------*/
+
+/*---------------------------*/
+         /*ABOUT US*/
+/*---------------------------*/
+
+#end{
+	background-color: #f39c12;
+}
+
+#about h1{
+	margin: 50px 300px auto;
+	padding-top: 70px;
+}
+
+.contact{
+	margin: 40px auto 150px 275px;	
+}
+
+#endlist{
+	list-style-type: none;
+	text-align: right;
+	clear: both;
+}
+
+#end p{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+#endlist li{
+	display: inline-block;
+	margin-left: 5px;
+	padding: 10px 5px;
+	color: black;
+}
+
+#end p:last-child{
+	float: right;
+}
+
+#endlist li:hover{
+	text-decoration: underline;
+}
