@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('../font-face/GoodDog-webfont.eot');
+    src: url('../font-face/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-face/GoodDog-webfont.woff') format('woff'),
+         url('../font-face/GoodDog-webfont.ttf') format('truetype'),
+         url('../font-face/GoodDog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blokletters_balpenbalpen';
+    src: url('../font-face/Blokletters-Balpen-webfont.eot');
+    src: url('../font-face/Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-face/Blokletters-Balpen-webfont.woff') format('woff'),
+         url('../font-face/Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('../font-face/Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  width: 70%;
+  min-width: 500px;
+  margin:30px auto;
+  
+}
+
+figure img {
+  width: 100%;
+  margin: auto;
+  
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+figure {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  border: 5px solid white;
+  
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  -ms-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  -o-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+figure:hover img {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  height: 100%;
+  
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+figure:hover figcaption {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+
+figcaption h1,
+figcaption p {
+  position: relative;
+  left: 100%;
+  
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+figcaption h1 {
+  font-size: 35px;
+  margin: 5px 0;
+  font-family: 'blokletters_balpenbalpen', sans-serif;
+  padding: 20px;
+  font-weight: 600;
+  background: black;
+  
+  -webkit-transition-delay: 1.2s;
+  -moz-transition-delay: 1.2s;
+  -ms-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+figcaption p {
+  font-size: 12px;
+  font-family: 'blokletters_balpenbalpen', sans-serif;
+  padding: 0 20px 20px;
+  
+  -webkit-transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+figure:hover figcaption h1,
+figure:hover figcaption p {
+  left: 0;
+}

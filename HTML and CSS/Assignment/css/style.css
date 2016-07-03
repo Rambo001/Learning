@@ -1,0 +1,19 @@
+body{
+	background: #E0E0E0;
+}
+
+div{
+	width: 500px;
+	margin: auto;
+	font-family: sans-serif;
+	font-weight:bold;
+}
+
+
+
+blockquote{
+	border:2px solid white;
+	padding:10px;
+	text-align:center;
+	margin-left: 0px
+}

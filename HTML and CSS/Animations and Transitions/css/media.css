@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'sf_cartoonist_handregular';
+    src: url('../font-face/SF_Cartoonist_Hand-webfont.eot');
+    src: url('../font-face/SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-face/SF_Cartoonist_Hand-webfont.woff') format('woff'),
+         url('../font-face/SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
+         url('../font-face/SF_Cartoonist_Hand-webfont.svg#sf_cartoonist_handregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('../font-face/Archistico_Simple-webfont.eot');
+    src: url('../font-face/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-face/Archistico_Simple-webfont.woff') format('woff'),
+         url('../font-face/Archistico_Simple-webfont.ttf') format('truetype'),
+         url('../font-face/Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	width: 70%;
+	min-width: 500px;
+	margin: auto;
+}
+
+h1{
+	font-family:'archisticonormal'; 
+	font-size: 50px;
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+p{
+	font-family: 'sf_cartoonist_handregular';
+	font-size: 25px;
+	
+	-webkit-columns: 4;
+	-moz-columns: 4;
+	columns: 4;
+
+	-webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	column-gap: 10px;
+}
+
+p::first-letter{
+	font-size: 60px;
+	line-height: 62px;
+	float:left;
+	padding: 0 10px;
+}
+
+@media screen and (max-width: 800px){ 
+	p{
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		columns: 2;
+	}
+}

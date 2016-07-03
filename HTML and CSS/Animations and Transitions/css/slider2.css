@@ -1,0 +1,56 @@
+.slider{
+	width: 400px;
+	overflow: hidden;
+	margin: 150px auto 0;
+}
+
+.slider ul{
+	width:10000px;
+	padding: 0;
+	position: relative;
+}
+
+
+.slider li{
+	list-style-type: none;
+	display: inline-block;
+	width: 400px;
+	text-align: center;
+	float: left;
+	position: relative;
+	-webkit-animation: slide 20s linear;
+}
+
+.slider li{
+	-webkit-animation-iteration-count: infinite;
+}
+
+.slider a{
+	text-decoration: none;
+}
+
+.slider ul:hover li{
+	-webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes 'slide'{
+	10%, 100%{
+		left: 0;
+	}
+
+	30%, 35%{
+		left: -400px;
+	}
+
+	50%, 55%{
+		left: -800px;
+	}
+
+	70%, 75%{
+		left: -1200px;
+	}
+
+	90%, 95%{
+		left: -1600px;
+	}
+}
