@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Moving in a Square</title>
+		<link rel="stylesheet" type="text/css" href="div.css"/>
+	</head>
+	
+	<body>
+		
+		<div id="box"></div>
+		<!--<h1 id="#box">Hi</h1>!-->
+
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+
+			var direction = 'right';
+			var offset = 0;
+
+			$("#box").offset({left: offset, top: offset});
+
+			var moveImage = function(){
+				if(direction === 'right'){
+					$("#box").offset({left: offset});
+					offset++;
+					if(offset > 200){
+						offset = 0;
+						direction = 'down';
+					}
+				}
+				else if(direction === 'down'){
+					$("#box").offset({top: offset});
+					offset++;
+					if(offset > 200){
+						offset = 200;
+						direction = 'left';
+					}
+				}
+				else if(direction === 'left'){
+					$("#box").offset({left: offset});
+					offset--;
+					if(offset < 0){
+						offset = 200;
+						direction = 'top';
+					}
+				}
+				else if(direction === 'top'){
+					$("#box").offset({top: offset});
+					offset--;
+					if(offset < 0){
+						offset = 0;
+						direction = 'right';
+					}
+				}
+			};
+			
+			setInterval(moveImage, 15);
+		
+		</script>
+	</body>
+</html>

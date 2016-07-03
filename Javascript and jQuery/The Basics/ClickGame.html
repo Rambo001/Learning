@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Click Me!</title>
+	</head>
+	
+	<body>
+		<img src="mouse.png" width = 200 height = 200/>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			//getting the width and height of the screen
+			var width = window.innerWidth - 200;  
+			var height = window.innerHeight -200;
+
+			var clicks = 0;
+			var intervalLength = 500;
+			
+			//function for moving the image to random positions
+			var moveImage = function(){
+				//getting random height and width
+				var randomLeft = Math.random() * width;
+				var randomTop = Math.random() * height;
+				$("img").offset({
+					left: randomLeft,
+					top: randomTop
+				});
+			};
+
+			var intervalId = setInterval(moveImage, intervalLength);
+
+			//increasing speed as the clicks increase
+			$("img").click(function(event){
+				console.log(intervalLength);
+				clicks++;
+				clearInterval(intervalId);
+				intervalLength -= 50;
+
+				if(clicks > 10){
+					alert("Congrats!You caught the rabbit");
+					return;
+				}
+				else
+					intervalId = setInterval(moveImage, intervalLength);
+			});
+			
+		</script>	
+	</body>
+</html>

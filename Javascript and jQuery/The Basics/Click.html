@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Click</title>
+	</head>
+	<body>
+		<h1>Click anywhere</h1>
+		<p id="para">Position</p>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script type = "text/Javascript">
+			var clickHandler = function(event){
+				$("#para").append("<p>" + event.pageX + " " + event.pageY + "</p>");
+			};
+
+			$(window).click(clickHandler);
+
+		</script>
+	</body>
+</html>

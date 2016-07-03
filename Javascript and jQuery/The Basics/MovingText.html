@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MovingText</title>
+	</head>
+	<body>
+		<h1 id="main-heading">I move</h1>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			var leftOffset = 0;
+			var rightOffset = 200;
+			
+			var moveHeading = function(){
+				$("#main-heading").offset({left: leftOffset});
+				leftOffset++;
+
+				if(leftOffset > 200){
+					leftOffset = 0;
+				}
+
+			};
+			setInterval(moveHeading, 30);
+
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hide Spoilers</title>
+	</head>
+	<body>
+		<h1>Star Wars</h1>
+		<a href="#">Click for spoilers.</a>
+		<p>Luke's guardians die.</p>
+		<p>Darth Vader is Luke's father.</p>
+		<p>Darth Vader dies.P.S. Leia is Luke's sister.</p>
+		<p>Hans Solo dies.</p>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			var children = $('p');
+			$(document).ready(function(){
+				$('p').hide();
+			})
+			$('a').click(function () {
+				$('p').slideDown();
+			})
+		</script>
+			
+	</body>
+
+</html>

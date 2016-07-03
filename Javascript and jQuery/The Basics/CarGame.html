@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Car Game</title>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			var Car = function(x,y){
+				this.x = x;
+				this.y = y;
+			};
+			Car.prototype.draw = function(){
+				var carHtml = '<img src="car2d.png" width=200 height=98>';
+				
+				this.carElement = $(carHtml);
+				this.carElement.css({
+					position: "absolute",
+					left: this.x,
+					top: this.y					
+				});
+
+				$("body").append(this.carElement);
+			};
+			Car.prototype.race = function(speed){
+				if(this.x <= (window.innerWidth - 200)){
+					this.x += speed;
+					this.carElement.css({
+						left: this.x,
+						top: this.y
+					});
+				}
+				else
+					clearInterval(intervalId);
+			};
+
+			var tesla = new Car(0,0);
+			var nissan = new Car(0,100);
+			var toyota = new Car(0, 200);
+
+			tesla.draw();
+			nissan.draw();
+			toyota.draw();
+
+			var intervalId = setInterval(function(){
+				tesla.race(Math.random()*20);
+				nissan.race(Math.random()*20);
+				toyota.race(Math.random()*20);
+			}, 30);
+
+		</script>
+	</body>
+</html>
